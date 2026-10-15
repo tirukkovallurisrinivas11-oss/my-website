@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kadai Story | Multi-Cuisine Fine Dining & South Indian Restaurant in Nagole, Hyderabad</title>
+  <meta name="description"
+    content="Experience authentic South Indian and multi-cuisine royal dining at The Kadai Story, Sathvikam, Nagole. Savor our famous Mutton Potlam Keema Biryani, Miryala Vepudu Kodi, and sizzling Kadai specialties.">
+  <meta name="keywords"
+    content="The Kadai Story, Nagole Restaurant, Bandlaguda Restaurant, South Indian Restaurant Hyderabad, Potlam Biryani, Sathvikam Restaurant">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Floating Announcement Bar (Top) -->
+  <div class="top-announcement">
+    <div class="container top-announcement-content">
+      <span><i class="fa-solid fa-star text-gold"></i> Rated 4.0 (798+ Reviews) · Fine Dining in
+        Nagole-Bandlaguda</span>
+      <div class="announcement-links">
+        <a href="tel:08383883939"><i class="fa-solid fa-phone"></i> 083838 83939</a>
+        <span class="divider">|</span>
+        <a href="#location"><i class="fa-solid fa-clock"></i> Open Today: 12:00 PM – 12:30 AM</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Pill Header & Navigation (as seen in screenshots) -->
+  <header class="header-wrapper" id="mainHeader">
+    <nav class="nav-pill container" aria-label="Main Navigation">
+      <!-- Left Navigation Links -->
+      <div class="nav-links-left">
+        <a href="#home" class="nav-link active">HOME</a>
+        <a href="#menu" class="nav-link">MENU</a>
+        <a href="#experience" class="nav-link">EXPERIENCE</a>
+        <a href="#reviews" class="nav-link">REVIEWS</a>
+        <a href="#faqs" class="nav-link">FAQS</a>
+      </div>
+
+      <!-- Center Logo (Official Kadai Mark & Typography matching physical menu) -->
+      <a href="#home" class="brand-logo" aria-label="The Kadai Story Home">
+        <svg class="kadai-logo-icon" width="28" height="24" viewBox="0 0 100 80" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path d="M42 20C41 14 45 9 42 3" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
+          <path d="M50 18C49 12 53 7 50 2" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
+          <path d="M58 20C57 14 61 9 58 3" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" />
+          <path d="M15 30H85C83 58 68 70 50 70C32 70 17 58 15 30Z" fill="currentColor" />
+          <path d="M16 36C10 36 6 32 6 26C6 20 11 17 17 19" stroke="currentColor" stroke-width="5"
+            stroke-linecap="round" />
+          <path d="M84 36C90 36 94 32 94 26C94 20 89 17 83 19" stroke="currentColor" stroke-width="5"
+            stroke-linecap="round" />
+        </svg>
+        <span class="logo-sub">THE</span>
+        <span class="logo-main">KADAI</span>
+        <span class="logo-sub">STORY</span>
+      </a>
+
+      <!-- Right Action CTA -->
+      <div class="nav-actions-right">
+        <a href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTF2d3pybmp3ehgAOgMI8A0%3D&hl=en-IN&gl=in&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search"
+          target="_blank" rel="noopener" class="pill-btn pill-btn-ghost hide-mobile">
+          ORDER ONLINE
+        </a>
+        <button class="pill-btn pill-btn-primary" id="openReserveModalBtn" aria-label="Open Table Reservation Modal">
+          RESERVE NOW
+        </button>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-content">
+      <div class="mobile-menu-header">
+        <span class="brand-logo">
+          <span class="logo-main">the kadai story</span>
+        </span>
+        <button class="close-menu-btn" id="closeMobileMenuBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="#home" class="mobile-nav-link">HOME</a>
+        <a href="#menu" class="mobile-nav-link">MENU</a>
+        <a href="#experience" class="mobile-nav-link">EXPERIENCE</a>
+        <a href="#reviews" class="mobile-nav-link">REVIEWS</a>
+        <a href="#faqs" class="mobile-nav-link">FAQS</a>
+        <a href="#location" class="mobile-nav-link">LOCATION & HOURS</a>
+      </div>
+      <div class="mobile-actions">
+        <button class="pill-btn pill-btn-primary full-width" onclick="openReservationModal()">RESERVE NOW</button>
+        <a href="tel:08383883939" class="pill-btn pill-btn-outline full-width">CALL 083838 83939</a>
+        <a href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTF2d3pybmp3ehgAOgMI8A0%3D&hl=en-IN&gl=in&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-"
+          target="_blank" rel="noopener" class="pill-btn pill-btn-ghost full-width">ORDER ONLINE</a>
+      </div>
+    </div>
+  </div>
+
+  <main id="home">
+    <!-- Hero Banner with Background Carousel & Live Status Pill -->
+    <section class="hero-section" aria-label="Restaurant Hero Carousel">
+      <div class="carousel-container" id="heroCarousel">
+
+        <!-- Slide 1: Fine Dining Warm Interior -->
+        <div class="carousel-slide active"
+          style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=85');">
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <span class="caption-tag">FINE DINING & REFINED HOSPITALITY</span>
+            <h2 class="caption-title">Crafting Timeless Culinary Memories at Sathvikam</h2>
+          </div>
+        </div>
+
+        <!-- Slide 2: Royal Multi-Cuisine Spread -->
+        <div class="carousel-slide"
+          style="background-image: url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1920&q=85');">
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <span class="caption-tag">AUTHENTIC FLAVORS</span>
+            <h2 class="caption-title">From Steaming Dum Biryanis to Sizzling Clay Kadai Gravies</h2>
+          </div>
+        </div>
+
+        <!-- Slide 3: Ambient Seating & Celebration Experience -->
+        <div class="carousel-slide"
+          style="background-image: url('https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1920&q=85');">
+          <div class="slide-overlay"></div>
+          <div class="slide-caption">
+            <span class="caption-tag">FAMILY & CELEBRATIONS</span>
+            <h2 class="caption-title">The Perfect Destination For Your Special Evenings</h2>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Live Status Badge (Screenshot 1: NOW OPEN - Monday-Sunday ...) -->
+      <div class="hero-floating-status">
+        <a href="#location" class="status-badge-pill" id="liveStatusBadge">
+          <span class="status-dot"></span>
+          <span class="status-text"><strong>NOW OPEN</strong> — Monday–Sunday · 12:00 PM – 12:30 AM</span>
+          <span class="status-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+        </a>
+      </div>
+
+      <!-- Carousel Indicators (Screenshot 1: pill + circle dots) -->
+      <div class="carousel-indicators" id="carouselIndicators">
+        <button class="indicator-dot active" data-slide="0" aria-label="Go to slide 1"></button>
+        <button class="indicator-dot" data-slide="1" aria-label="Go to slide 2"></button>
+        <button class="indicator-dot" data-slide="2" aria-label="Go to slide 3"></button>
+      </div>
+    </section>
+
+    <!-- Welcome & Grand Serif Headline Section (Direct 1:1 match to Screenshot 1) -->
+    <section class="editorial-intro-section" aria-label="Welcome Introduction">
+      <div class="container text-center">
+        <p class="welcome-eyebrow">Welcome to The Kadai Story</p>
+        <h1 class="grand-serif-title">
+          Raising the Calibre of Authentic Multi-Cuisine Dining in Nagole
+        </h1>
+        <p class="intro-description">
+          A welcoming destination blending time-honored culinary heritage with modern gastronomy. From the aroma of
+          slow-cooked dum biryani sealed in handi to sizzling iron and copper kadais bursting with freshly ground
+          spices, every meal is prepared by master chefs for your delight.
+        </p>
+
+        <!-- Rating & Highlight Badges -->
+        <div class="highlights-pill-strip">
+          <div class="highlight-chip">
+            <span class="chip-icon"><i class="fa-solid fa-star text-gold"></i></span>
+            <span class="chip-text"><strong>4.0 / 5.0</strong> (798 Verified Google Reviews)</span>
+          </div>
+          <div class="highlight-chip">
+            <span class="chip-icon"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+            <span class="chip-text"><strong>₹200 – ₹1,400</strong> per person</span>
+          </div>
+          <div class="highlight-chip">
+            <span class="chip-icon"><i class="fa-solid fa-utensils"></i></span>
+            <span class="chip-text">Multi-Cuisine & South Indian Specialities</span>
+          </div>
+          <div class="highlight-chip">
+            <span class="chip-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span class="chip-text">1st Floor, Sathvikam, Nagole-Bandlaguda</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Symmetrical Rounded Feature Cards (Direct 1:1 match to Screenshot 2) -->
+    <section class="feature-cards-section" id="experience" aria-label="Experiences and Menu Showcase">
+      <div class="container">
+        <div class="feature-grid">
+
+          <!-- Card 1: Menu Showcase -->
+          <article class="feature-card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=85"
+                alt="Exquisite food spread at The Kadai Story with curries and flatbreads" class="card-img"
+                loading="lazy">
+              <div class="image-gradient-overlay"></div>
+              <span class="card-floating-badge">CHEF'S SELECTION</span>
+            </div>
+            <div class="card-content text-center">
+              <h2 class="card-serif-title">Menu</h2>
+              <p class="card-description">
+                A wide selection of delicacies from around the world, as well as from different regions of India,
+                curated by experts and prepared safely by our team of well-seasoned chefs, to entice your tastebuds like
+                never before.
+              </p>
+              <button class="pill-btn pill-btn-outline" id="viewFullMenuBtn"
+                aria-label="Click to view full restaurant menu">
+                CLICK TO VIEW
+              </button>
+            </div>
+          </article>
+
+          <!-- Card 2: Dining Experience & Indulgent Feasts (Matches Screenshot 2 right card) -->
+          <article class="feature-card">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=1000&q=85"
+                alt="Warm and inviting dining ambience of The Kadai Story on First Floor Sathvikam" class="card-img"
+                loading="lazy">
+              <div class="image-gradient-overlay"></div>
+              <span class="card-floating-badge">FINE AMBIENCE</span>
+            </div>
+            <div class="card-content text-center">
+              <h2 class="card-serif-title">Indulgent Dining & Feasts</h2>
+              <p class="card-description">
+                Indulge in the most sought-after dining experience the city has to offer, at The Kadai Story. Savor a
+                spread that features regional delights, sizzling live counter preparations, and spacious family seating
+                designed for memorable gatherings.
+              </p>
+              <button class="pill-btn pill-btn-outline" onclick="openReservationModal()"
+                aria-label="Reserve a table for dining">
+                RESERVE YOUR TABLE
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Popular Dishes / Menu Highlights Section (From User's Given Menu Items) -->
+    <section class="menu-highlights-section" id="menu" aria-label="Menu Highlights">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">TASTES OF THE KADAI</span>
+          <h2 class="section-serif-title">Signature Menu Highlights</h2>
+          <p class="section-subtitle">
+            Curated from our top-rated guest favorites — prepared fresh with authentic ground spices and served in
+            traditional style.
+          </p>
+
+          <!-- Category Filter Tabs -->
+          <div class="menu-tabs-bar" role="tablist">
+            <button class="menu-tab-btn active" data-filter="all" role="tab">All Signatures</button>
+            <button class="menu-tab-btn" data-filter="biryani" role="tab">Dum & Potlam Biryanis</button>
+            <button class="menu-tab-btn" data-filter="starters" role="tab">Starters & Soups</button>
+            <button class="menu-tab-btn" data-filter="curries" role="tab">Kadai Gravies</button>
+            <button class="menu-tab-btn" data-filter="breads" role="tab">Breads & Rice</button>
+          </div>
+        </div>
+
+        <!-- Menu Highlights Grid -->
+        <div class="dishes-grid" id="dishesGrid">
+
+          <!-- 1. Mutton Potlam Keema Biryani -->
+          <div class="dish-card" data-category="biryani">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=600&q=80"
+                alt="Mutton Potlam Keema Biryani" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Mutton Potlam Keema Biryani</h3>
+                <span class="dish-price">₹480</span>
+              </div>
+              <p class="dish-desc">
+                Our crowning glory: tender minced mutton keema layered with fragrant dum basmati rice, enveloped inside
+                a delicate egg omelette pouch with royal aromatic spices.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Chef's Signature</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Mutton Potlam Keema Biryani')">Order at
+                  Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Chicken Dum Biryani -->
+          <div class="dish-card" data-category="biryani">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80"
+                alt="Chicken Dum Biryani" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Chicken Dum Biryani</h3>
+                <span class="dish-price">₹340</span>
+              </div>
+              <p class="dish-desc">
+                Classic Hyderabadi specialty. Succulent farm chicken marinated overnight in artisanal yogurt, mint,
+                saffron, and slow-cooked in a dough-sealed clay handi.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Hyderabadi Classic</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Chicken Dum Biryani')">Order at
+                  Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Miryala Vepudu Kodi -->
+          <div class="dish-card" data-category="starters">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=600&q=80"
+                alt="Miryala Vepudu Kodi" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Miryala Vepudu Kodi</h3>
+                <span class="dish-price">₹320</span>
+              </div>
+              <p class="dish-desc">
+                Traditional Andhra-style pan-roasted chicken tossed with freshly cracked black peppercorns (miriyalu),
+                caramelized shallots, curry leaves, and country ghee.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">South Indian Special</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Miryala Vepudu Kodi')">Order at
+                  Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Baby Corn Kurkure South Indian Style -->
+          <div class="dish-card" data-category="starters">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=80"
+                alt="Baby Corn Kurkure South Indian Style" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Baby Corn Kurkure South Indian Style</h3>
+                <span class="dish-price">₹260</span>
+              </div>
+              <p class="dish-desc">
+                Crispy golden baby corn spears battered with aromatic rice flour and South Indian gun powder spices,
+                flashed with curry leaves and roasted garlic chips.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Vegetarian Delight</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Baby Corn Kurkure')">Order at
+                  Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Chicken Tikka Masala Soup -->
+          <div class="dish-card" data-category="starters">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80"
+                alt="Chicken Tikka Masala Soup" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Chicken Tikka Masala Soup</h3>
+                <span class="dish-price">₹190</span>
+              </div>
+              <p class="dish-desc">
+                A rich, velvety fusion soup marrying the smokiness of tandoor-roasted chicken tikka morsels with a
+                delicately spiced tomato and cream consommé.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Signature Starter</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Chicken Tikka Masala Soup')">Order at
+                  Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Freshly Baked Butter Naan & Garlic Naan -->
+          <div class="dish-card" data-category="breads">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=600&q=80"
+                alt="Freshly Baked Indian Flatbreads" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Freshly Baked Butter & Garlic Naan</h3>
+                <span class="dish-price">₹75</span>
+              </div>
+              <p class="dish-desc">
+                Hand-stretched leavened dough slapped onto flaming clay tandoor walls, brushed generously with pure
+                dairy butter and minced roasted garlic cilantro butter.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Tandoor Special</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Butter Naan')">Order at Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 7. Kadai Special Murgh / Paneer Gravy -->
+          <div class="dish-card" data-category="curries">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=600&q=80"
+                alt="Kadai Special Curry" loading="lazy">
+              <span class="dish-badge popular">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Kadai Special Curry</h3>
+                <span class="dish-price">₹330</span>
+              </div>
+              <p class="dish-desc">
+                Our namesake specialty cooked in heavy iron kadai with coarsely crushed coriander seeds, dried Kashmiri
+                chillies, bell peppers, and rich tomato-onion masala.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Restaurant Namesake</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Kadai Special')">Order at Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Chilli Chicken with Bell Peppers -->
+          <div class="dish-card" data-category="starters">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=600&q=80"
+                alt="Chilli Chicken with Bell Peppers" loading="lazy">
+              <span class="dish-badge">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Chilli Chicken with Bell Peppers</h3>
+                <span class="dish-price">₹310</span>
+              </div>
+              <p class="dish-desc">
+                Wok-tossed boneless chicken morsels glazed in dark soya, spicy green chilli emulsion, garlic flakes, and
+                crunchy three-color bell peppers.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Indo-Chinese</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Chilli Chicken')">Order at Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Chicken Curry with Fresh Coriander -->
+          <div class="dish-card" data-category="curries">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=600&q=80"
+                alt="Chicken Curry with Fresh Coriander" loading="lazy">
+              <span class="dish-badge">Popular</span>
+              <span class="dish-type non-veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Chicken Curry with Fresh Coriander</h3>
+                <span class="dish-price">₹320</span>
+              </div>
+              <p class="dish-desc">
+                Homestyle tender chicken simmered slowly in an aromatic brown onion and cashew-coconut gravy, finished
+                with farm-fresh coriander paste and garam masala.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Homestyle Gravy</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Chicken Curry')">Order at Table</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 10. Bowl of Vegetable Fried Rice -->
+          <div class="dish-card" data-category="breads">
+            <div class="dish-img-box">
+              <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=600&q=80"
+                alt="Bowl of Vegetable Fried Rice" loading="lazy">
+              <span class="dish-badge">Popular</span>
+              <span class="dish-type veg"><i class="fa-solid fa-circle"></i></span>
+            </div>
+            <div class="dish-details">
+              <div class="dish-title-row">
+                <h3 class="dish-name">Bowl of Vegetable Fried Rice</h3>
+                <span class="dish-price">₹230</span>
+              </div>
+              <p class="dish-desc">
+                Steamed long-grain basmati wok-seared over high flame with crunchy diced beans, carrots, spring
+                scallions, white pepper, and light aromatics.
+              </p>
+              <div class="dish-footer">
+                <span class="dish-tag">Comfort Food</span>
+                <button class="dish-order-btn" onclick="openReservationModal('Veg Fried Rice')">Order at Table</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="menu-cta-center text-center">
+          <button class="pill-btn pill-btn-primary" onclick="openFullMenuModal()">
+            <i class="fa-solid fa-book-open"></i> VIEW COMPLETE RESTAURANT MENU
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Dine With Us / Story Section -->
+    <section class="story-section" aria-label="About The Kadai Story">
+      <div class="container story-grid">
+        <div class="story-text">
+          <span class="section-tag">OUR CULINARY PASSION</span>
+          <h2 class="section-serif-title">Where Every Kadai Holds A Celebration</h2>
+          <p class="story-p">
+            Located conveniently on the <strong>First Floor of Sathvikam</strong> along the bustling Nagole-Bandlaguda
+            corridor, The Kadai Story was envisioned to bring the authentic depth of regional South Indian recipes and
+            majestic North Indian culinary arts under one luxurious roof.
+          </p>
+          <div class="story-features">
+            <div class="story-feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-fire-burner"></i></div>
+              <div>
+                <h4>Traditional Copper & Cast-Iron Kadais</h4>
+                <p>Authentic heat distribution preserves essential oils and unlocks layered aroma in every gravy.</p>
+              </div>
+            </div>
+            <div class="story-feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-seedling"></i></div>
+              <div>
+                <h4>Stone-Ground Spices & Zero Preservatives</h4>
+                <p>Whole cloves, black pepper, cardamom, and hand-selected chillies pounded fresh every morning.</p>
+              </div>
+            </div>
+            <div class="story-feat-item">
+              <div class="feat-icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+              <div>
+                <h4>Family Celebrations & Spacious Seating</h4>
+                <p>Generous seating booths and private dining corners ideal for birthdays, anniversaries, and corporate
+                  dinners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="story-visual">
+          <div class="visual-stack">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80"
+              alt="Restaurant Interior" class="stack-img main-img" loading="lazy">
+            <div class="stat-overlay-box">
+              <span class="stat-num">4.0 ★</span>
+              <span class="stat-lbl">798+ Happy Diners on Google</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Verified Google Reviews Section -->
+    <section class="reviews-section" id="reviews" aria-label="Customer Reviews">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">TESTIMONIALS</span>
+          <h2 class="section-serif-title">Loved by Food Lovers in Hyderabad</h2>
+          <div class="rating-badge-banner">
+            <div class="rating-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <span class="rating-score"><strong>4.0 out of 5.0</strong></span>
+            <span class="rating-total">Based on 798+ Google Reviews · ₹200–1,400 per person</span>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Review 1 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">RK</div>
+              <div class="reviewer-meta">
+                <h4>Rahul Krishna</h4>
+                <span class="review-date">Local Guide · 45 reviews</span>
+              </div>
+              <span class="google-icon"><i class="fa-brands fa-google"></i></span>
+            </div>
+            <div class="review-stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-body">
+              "The Mutton Potlam Keema Biryani here is hands down one of the most unique and flavorful dishes in Nagole!
+              Wrapped neatly in an omelette and packed with spicy succulent keema. Great family ambience on the first
+              floor."
+            </p>
+            <span class="tag-dined">Dined: Dinner · Weekend</span>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">SP</div>
+              <div class="reviewer-meta">
+                <h4>Sneha Priya</h4>
+                <span class="review-date">Family Dinner · Bandlaguda</span>
+              </div>
+              <span class="google-icon"><i class="fa-brands fa-google"></i></span>
+            </div>
+            <div class="review-stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="review-body">
+              "Celebrated my parents' anniversary here. The Miryala Vepudu Kodi and Kadai Murgh with hot butter garlic
+              naan were sublime. Attentive staff and plenty of parking near Reliance Trends."
+            </p>
+            <span class="tag-dined">Dined: Family Gathering</span>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="review-card">
+            <div class="review-header">
+              <div class="reviewer-avatar">VA</div>
+              <div class="reviewer-meta">
+                <h4>Vikram Anand</h4>
+                <span class="review-date">Food Enthusiast</span>
+              </div>
+              <span class="google-icon"><i class="fa-brands fa-google"></i></span>
+            </div>
+            <div class="review-stars-row">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+            </div>
+            <p class="review-body">
+              "Late night dining hero! It stays open till 12:30 AM which is fantastic. The Baby Corn Kurkure and Chicken
+              Dum Biryani hit the spot every single time. Clean, hygienic, and well maintained."
+            </p>
+            <span class="tag-dined">Dined: Late Night Feast</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section (Matching the FAQS Nav link from reference screenshot) -->
+    <section class="faqs-section" id="faqs" aria-label="Frequently Asked Questions">
+      <div class="container max-w-800">
+        <div class="section-header text-center">
+          <span class="section-tag">HELPFUL INFORMATION</span>
+          <h2 class="section-serif-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion-list">
+          <!-- FAQ 1 -->
+          <div class="accordion-item active">
+            <button class="accordion-header" aria-expanded="true">
+              <span>What are your operational timings?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>We are open 7 days a week from <strong>12:00 PM in the afternoon until 12:30 AM midnight</strong>.
+                Lunch service runs from 12:00 PM to 4:00 PM, and dinner service runs continuously until 12:30 AM.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Where exactly is The Kadai Story located in Nagole?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>We are located on the <strong>First Floor, Sathvikam Building, Nagole - Bandlaguda Road</strong>, right
+                adjacent to Reliance Trends in Bandlaguda, Nagole, Hyderabad - 500068. Ample two-wheeler and
+                four-wheeler parking is available.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What are the chef's most recommended signature dishes?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Our top recommended dishes include the famous <strong>Mutton Potlam Keema Biryani</strong>, spicy
+                <strong>Miryala Vepudu Kodi</strong> (black pepper chicken), <strong>Baby Corn Kurkure</strong>,
+                <strong>Kadai Murgh</strong>, and tandoori freshly baked garlic naans.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How can I reserve a table for large groups or family events?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>You can reserve online directly through our website using the <strong>RESERVE NOW</strong> button, or
+                call our direct reservation desk at <a href="tel:08383883939"><strong>083838 83939</strong></a>. For
+                parties larger than 10, advance booking is recommended.</p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Are vegetarian and Jain-friendly options available?</span>
+              <i class="fa-solid fa-plus acc-icon"></i>
+            </button>
+            <div class="accordion-content">
+              <p>Yes, we feature dedicated pure vegetarian sections including Paneer Butter Masala, Veg Dum Biryani,
+                Baby Corn Kurkure, Dal Makhani, fresh tandoor rotis, and wok-tossed fried rice prepared with dedicated
+                cookware.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location, Hours & Direct Contact Section -->
+    <section class="location-section" id="location" aria-label="Location and Contact">
+      <div class="container">
+        <div class="location-card-wrapper">
+          <div class="location-info">
+            <span class="section-tag">FIND US IN HYDERABAD</span>
+            <h2 class="section-serif-title">Visit The Kadai Story</h2>
+
+            <div class="info-blocks">
+              <div class="info-block">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4>Address</h4>
+                  <p>First Floor, Sathvikam, Nagole - Bandlaguda Rd, near Reliance Trends, Bandlaguda, Nagole,
+                    Hyderabad, Telangana 500068</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                <div>
+                  <h4>Operating Hours</h4>
+                  <p>Monday – Sunday: <strong>12:00 PM – 12:30 AM</strong> (Open Late Night)</p>
+                  <p class="text-muted">Lunch: 12:00 PM – 4:00 PM | Dinner: 7:00 PM – 12:30 AM</p>
+                </div>
+              </div>
+
+              <div class="info-block">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4>Telephone & Reservations</h4>
+                  <p><a href="tel:08383883939" class="phone-link"><strong>083838 83939</strong></a></p>
+                  <p class="text-muted">Direct table reservations and banquet enquiries</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Action Buttons -->
+            <div class="location-actions">
+              <a href="https://www.google.com/maps/place/the+,kadai+story/data=!4m2!3m1!1s0x3bcb9fe5966a2abd:0x671f93e5c6eaa908?sa=X&ved=1t:242&ictx=111"
+                target="_blank" rel="noopener" class="pill-btn pill-btn-primary">
+                <i class="fa-solid fa-diamond-turn-right"></i> GET DIRECTIONS
+              </a>
+              <a href="tel:08383883939" class="pill-btn pill-btn-outline">
+                <i class="fa-solid fa-phone"></i> CALL RESTAURANT
+              </a>
+              <a href="https://www.google.com/searchviewer/42?cvd=CLw_EicKJeICIjIgEhkiF9LX29IPEQoNL2cvMTF2d3pybmp3ehgAOgMI8A0%3D&hl=en-IN&gl=in&cs=1&ssta=1&fo_m=MfohQo559jFvMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-"
+                target="_blank" rel="noopener" class="pill-btn pill-btn-ghost">
+                <i class="fa-solid fa-bag-shopping"></i> ORDER ONLINE
+              </a>
+            </div>
+          </div>
+
+          <!-- Map & Visual Landmark Card -->
+          <div class="location-map-box">
+            <div class="map-placeholder">
+              <div class="map-graphic-pin">
+                <div class="pulsing-pin">
+                  <i class="fa-solid fa-utensils"></i>
+                </div>
+                <h3>The Kadai Story</h3>
+                <p>1st Floor, Sathvikam · Near Reliance Trends</p>
+                <div class="map-meta-strip">
+                  <span><i class="fa-solid fa-star text-gold"></i> 4.0 (798)</span>
+                  <span>•</span>
+                  <span>₹200–1,400</span>
+                  <span>•</span>
+                  <span class="open-pill">Open till 12:30 AM</span>
+                </div>
+                <a href="https://www.google.com/maps/place/the+,kadai+story/data=!4m2!3m1!1s0x3bcb9fe5966a2abd:0x671f93e5c6eaa908?sa=X&ved=1t:242&ictx=111"
+                  target="_blank" rel="noopener" class="map-open-link">
+                  Open in Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Luxury Editorial Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col brand-col">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-sub">the</span>
+          <span class="logo-main">kadai<br><span class="logo-italic">story</span></span>
+        </a>
+        <p class="footer-desc">
+          Multi-cuisine Indian fine dining offering authentic flavors, tender potlam biryanis, and warm hospitality in
+          the heart of Nagole, Hyderabad.
+        </p>
+        <div class="social-links">
+          <a href="https://www.google.com/maps/place/the+,kadai+story/data=!4m2!3m1!1s0x3bcb9fe5966a2abd:0x671f93e5c6eaa908?sa=X&ved=1t:242&ictx=111"
+            target="_blank" rel="noopener" aria-label="Google Maps"><i class="fa-brands fa-google"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="tel:08383883939" aria-label="Call"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">QUICK LINKS</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu Highlights</a></li>
+          <li><a href="#experience">The Experience</a></li>
+          <li><a href="#reviews">Guest Reviews</a></li>
+          <li><a href="#faqs">FAQs</a></li>
+          <li><a href="#location">Directions & Hours</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">SIGNATURE SPECIALS</h4>
+        <ul class="footer-nav">
+          <li><a href="#menu">Mutton Potlam Keema Biryani</a></li>
+          <li><a href="#menu">Chicken Dum Biryani</a></li>
+          <li><a href="#menu">Miryala Vepudu Kodi</a></li>
+          <li><a href="#menu">Baby Corn Kurkure South Style</a></li>
+          <li><a href="#menu">Kadai Special Curries</a></li>
+          <li><a href="#menu">Clay Oven Garlic Naan</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">RESERVATIONS</h4>
+        <p class="footer-contact-p">
+          First Floor, Sathvikam, Nagole - Bandlaguda Rd, near Reliance Trends, Hyderabad 500068
+        </p>
+        <p class="footer-contact-phone">
+          <a href="tel:08383883939"><i class="fa-solid fa-phone"></i> 083838 83939</a>
+        </p>
+        <button class="pill-btn pill-btn-primary full-width mt-10" onclick="openReservationModal()">
+          RESERVE NOW
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>© 2026 The Kadai Story. All rights reserved. First Floor, Sathvikam, Nagole, Hyderabad.</p>
+        <p class="fine-print">A tribute to authentic Indian spice heritage and unforgettable family dining.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Table Reservation Modal -->
+  <div class="modal-backdrop" id="reserveModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeReserveModalBtn" aria-label="Close modal">&times;</button>
+
+      <div class="modal-header">
+        <span class="modal-eyebrow">THE KADAI STORY</span>
+        <h3 id="modalTitle" class="modal-title">Reserve a Table</h3>
+        <p class="modal-sub">Experience culinary excellence on the First Floor, Sathvikam, Nagole.</p>
+      </div>
+
+      <form id="reservationForm" class="reservation-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resGuests">Number of Guests</label>
+            <select id="resGuests" required>
+              <option value="2">2 Guests (Couple / Pair)</option>
+              <option value="4" selected>4 Guests (Family Table)</option>
+              <option value="6">6 Guests (Celebration Booth)</option>
+              <option value="8">8 Guests (Large Group)</option>
+              <option value="12">10+ Guests (Party Feast)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="resDate">Select Date</label>
+            <input type="date" id="resDate" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resTime">Preferred Time Slot</label>
+            <select id="resTime" required>
+              <optgroup label="Lunch Service">
+                <option value="12:30 PM">12:30 PM</option>
+                <option value="01:30 PM">01:30 PM</option>
+                <option value="02:30 PM">02:30 PM</option>
+                <option value="03:30 PM">03:30 PM</option>
+              </optgroup>
+              <optgroup label="Dinner Service">
+                <option value="07:00 PM">07:00 PM</option>
+                <option value="08:00 PM" selected>08:00 PM (Popular)</option>
+                <option value="09:00 PM">09:00 PM</option>
+                <option value="10:30 PM">10:30 PM</option>
+                <option value="11:30 PM">11:30 PM (Late Night)</option>
+              </optgroup>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="resSeating">Seating Preference</label>
+            <select id="resSeating">
+              <option value="Main Dining Hall">Main Dining Hall</option>
+              <option value="Cozy Family Booth">Cozy Family Booth</option>
+              <option value="Window View">Window View</option>
+              <option value="Celebration / Birthday">Celebration / Birthday Setup</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="resName">Full Name</label>
+            <input type="text" id="resName" placeholder="e.g. Jaswanth Paramkusam" required>
+          </div>
+          <div class="form-group">
+            <label for="resPhone">Phone Number</label>
+            <input type="tel" id="resPhone" placeholder="e.g. 098765 43210" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resNotes">Special Requests / Dish Pre-Orders</label>
+          <input type="text" id="resNotes"
+            placeholder="e.g. Please reserve 1 Mutton Potlam Keema Biryani / High chair needed">
+        </div>
+
+        <button type="submit" class="pill-btn pill-btn-primary full-width py-14">
+          CONFIRM RESERVATION
+        </button>
+
+        <p class="modal-footer-note">
+          Instant confirmation. You can also call us directly at <a href="tel:08383883939"><strong>083838
+              83939</strong></a>.
+        </p>
+      </form>
+
+      <!-- Reservation Success Box (Shown on Submit) -->
+      <div id="reservationSuccess" class="reservation-success-box" style="display: none;">
+        <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <h3>Table Reserved Successfully!</h3>
+        <p id="successSummary">We have confirmed your table at The Kadai Story.</p>
+        <div class="booking-code-card">
+          <span>Booking Reference:</span>
+          <strong id="bookingCode">TKS-83939</strong>
+        </div>
+        <p class="success-sub">An SMS / WhatsApp notification has been prepared for your phone. See you on the 1st
+          Floor, Sathvikam!</p>
+        <button class="pill-btn pill-btn-primary" onclick="closeReservationModal()">Done</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Complete Menu Modal (Triggered by "CLICK TO VIEW") -->
+  <div class="modal-backdrop" id="menuModal" role="dialog" aria-modal="true" aria-labelledby="fullMenuTitle">
+    <div class="modal-card menu-modal-card">
+      <button class="modal-close-btn" id="closeMenuModalBtn" aria-label="Close menu modal">&times;</button>
+
+      <div class="modal-header">
+        <span class="modal-eyebrow">THE KADAI STORY</span>
+        <h3 id="fullMenuTitle" class="modal-title">Curated Dining Menu</h3>
+        <p class="modal-sub">First Floor, Sathvikam, Nagole · Timings: 12:00 PM – 12:30 AM</p>
+
+        <!-- Search bar inside menu -->
+        <div class="menu-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="menuSearchInput" placeholder="Search biryani, soups, starters, kadais, naans...">
+        </div>
+      </div>
+
+      <div class="full-menu-scrollable" id="fullMenuContainer">
+
+        <!-- Category: Starters & Soups -->
+        <div class="menu-section-block">
+          <h4 class="menu-cat-title"><i class="fa-solid fa-bowl-rice"></i> Starters & Artisan Soups</h4>
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Chicken Tikka Masala Soup</strong>
+                <span class="badge-mini">Popular</span>
+              </div>
+              <p class="item-desc">Tandoor-charred chicken tikka shreds in a velvety spiced broth.</p>
+            </div>
+            <div class="item-price">₹190</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Baby Corn Kurkure South Indian Style</strong>
+                <span class="badge-mini">Chef Special</span>
+              </div>
+              <p class="item-desc">Crisp baby corn fingers tossed with curry leaves, crushed shallots, and spicy podi.
+              </p>
+            </div>
+            <div class="item-price">₹260</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Miryala Vepudu Kodi</strong>
+                <span class="badge-mini">Signature</span>
+              </div>
+              <p class="item-desc">Spicy Andhra black pepper roasted chicken with caramel onions & fresh curry leaves.
+              </p>
+            </div>
+            <div class="item-price">₹320</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Chilli Chicken with Bell Peppers</strong>
+              </div>
+              <p class="item-desc">Crispy fried chicken tossed in wok with scallions, soya, and crisp bell peppers.</p>
+            </div>
+            <div class="item-price">₹310</div>
+          </div>
+        </div>
+
+        <!-- Category: Biryanis -->
+        <div class="menu-section-block">
+          <h4 class="menu-cat-title"><i class="fa-solid fa-crown"></i> Signature Dum & Potlam Biryanis</h4>
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Mutton Potlam Keema Biryani</strong>
+                <span class="badge-mini">Royal Signature</span>
+              </div>
+              <p class="item-desc">Slow-braised mutton keema and long-grain basmati rice wrapped in an egg pouch.</p>
+            </div>
+            <div class="item-price">₹480</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Chicken Dum Biryani</strong>
+                <span class="badge-mini">Most Ordered</span>
+              </div>
+              <p class="item-desc">Sealed clay pot dum cooked basmati with tender marinated chicken and saffron.</p>
+            </div>
+            <div class="item-price">₹340</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Special Paneer Dum Biryani</strong>
+              </div>
+              <p class="item-desc">Charred cottage cheese cubes cooked in dum with fried onions and basmati.</p>
+            </div>
+            <div class="item-price">₹290</div>
+          </div>
+        </div>
+
+        <!-- Category: Kadai Curries & Gravies -->
+        <div class="menu-section-block">
+          <h4 class="menu-cat-title"><i class="fa-solid fa-fire"></i> Sizzling Kadai & Main Curries</h4>
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Kadai Murgh (Chicken Kadai)</strong>
+                <span class="badge-mini">House Favorite</span>
+              </div>
+              <p class="item-desc">Simmered in iron kadai with coarsely pounded coriander and dry red chillies.</p>
+            </div>
+            <div class="item-price">₹330</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator non-veg"></span>
+                <strong>Chicken Curry with Fresh Coriander</strong>
+              </div>
+              <p class="item-desc">Homestyle comforting chicken curry laden with fresh cilantro puree & aromatic spices.
+              </p>
+            </div>
+            <div class="item-price">₹320</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Kadai Paneer Masala</strong>
+              </div>
+              <p class="item-desc">Rich malai paneer cubes tossed with capsicum and roasted kadai masala.</p>
+            </div>
+            <div class="item-price">₹280</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Dal Tadka Double Ghee</strong>
+              </div>
+              <p class="item-desc">Yellow lentils tempered with golden garlic, cumin, and double spoon country ghee.</p>
+            </div>
+            <div class="item-price">₹210</div>
+          </div>
+        </div>
+
+        <!-- Category: Tandoori Breads & Rice -->
+        <div class="menu-section-block">
+          <h4 class="menu-cat-title"><i class="fa-solid fa-bread-slice"></i> Tandoor Flatbreads & Rice</h4>
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Butter Naan</strong>
+              </div>
+              <p class="item-desc">Clay-oven baked refined flour bread smothered in churned butter.</p>
+            </div>
+            <div class="item-price">₹60</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Garlic Naan</strong>
+                <span class="badge-mini">Recommended</span>
+              </div>
+              <p class="item-desc">Freshly baked flatbread topped with roasted garlic and chopped cilantro.</p>
+            </div>
+            <div class="item-price">₹75</div>
+          </div>
+
+          <div class="menu-item-row">
+            <div class="item-info">
+              <div class="item-name-tag">
+                <span class="veg-indicator veg"></span>
+                <strong>Bowl of Vegetable Fried Rice</strong>
+              </div>
+              <p class="item-desc">Wok tossed basmati rice with farm fresh vegetables, spring onion & mild soy.</p>
+            </div>
+            <div class="item-price">₹230</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-modal-footer">
+        <button class="pill-btn pill-btn-primary full-width" onclick="switchToReservationFromMenu()">
+          RESERVE NOW TO DINE
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
